@@ -12,11 +12,8 @@
 import torch
 from torch import nn
 import math
-#from diff_gaussian_rasterization import GaussianRasterizationSettings, GaussianRasterizer
-import alt_gaussian_rasterization
 
 from utils.sh_utils import eval_sh
-#from diff_gaussian_rasterization import _C
 import numpy as np
 import torchvision
 from gsplat import rasterization

@@ -42,21 +42,23 @@ This repository contains the official authors' implementation associated with th
 
 Make sure to clone the repository using `--recursive`:
 ```
-git clone -b Refactor https://github.com/FelixWindisch/hierarchical-LOD-gaussians.git --recursive
-cd hierarchical-LOD-gaussians
+git clone git@github.com:FelixWindisch/LoDOfGaussians.git --recursive
+cd LoDOfGaussians
 ```
 
 Setting up the conda environment:
 ```
-conda create -n LoDOfFGaussians
-conda activate LoDOfFGaussians
+conda create -n LoDOfGaussians
+conda activate LoDOfGaussians
 conda install python=3.10
 conda install -c nvidia cuda-toolkit=12.6
-pip install torch torchvision --index-url https://download.pytorch.org/whl/cu126
+pip3 install torch torchvision --index-url https://download.pytorch.org/whl/cu126
 
 pip install -r requirements.txt
+pip install submodules/simple-knn --no-build-isolation
+pip install submodules/gaussianhierarchy --no-build-isolation
 ```
-Install the last 5 dependencies with --no-build-isolation if you get errors.
+
 
 ### Compiling hierarchy generator and merger
 These files were adapted from Hierarchical 3DGS and can be built as follows:

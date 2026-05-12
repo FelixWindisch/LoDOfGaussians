@@ -21,7 +21,6 @@ from tqdm import tqdm
 from torch.utils.data import DataLoader
 from argparse import ArgumentParser, Namespace
 from arguments import ModelParams, PipelineParams, OptimizationParams
-import alt_gaussian_rasterization
 import torchvision
 def direct_collate(x):
     return x
