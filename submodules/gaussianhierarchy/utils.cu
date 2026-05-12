@@ -25,7 +25,7 @@ __global__ void compute_relocation(
     for (int i = 1; i <= N_idx; ++i) {
         for (int k = 0; k <= (i-1); ++k) {
             float bin_coeff = binoms[(i-1) * n_max + k];
-            float term = (pow(-1, k) / sqrt(k + 1)) * pow(opacity_new[idx], k + 1);
+            float term = (powf(-1.0f, (float)k) / sqrtf((float)(k + 1))) * powf(opacity_new[idx], (float)(k + 1));
             denom_sum += (bin_coeff * term);
         }
     }
