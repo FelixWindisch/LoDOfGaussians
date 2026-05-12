@@ -1,0 +1,9 @@
+# ninja log v7
+3	921	1778575532292031400	/media/felix-windisch/data/LoDOfGaussians/submodules/gaussianhierarchy/build/temp.linux-x86_64-cpython-310/utils.o	4b8f4a37b262d76c
+2	1313	1778575532291751700	/media/felix-windisch/data/LoDOfGaussians/submodules/gaussianhierarchy/build/temp.linux-x86_64-cpython-310/traversal.o	293f0b051b2df33c
+1	1526	1778575532290725600	/media/felix-windisch/data/LoDOfGaussians/submodules/gaussianhierarchy/build/temp.linux-x86_64-cpython-310/hierarchy_writer.o	57913fe8a5a79abb
+1	1722	1778575532290375000	/media/felix-windisch/data/LoDOfGaussians/submodules/gaussianhierarchy/build/temp.linux-x86_64-cpython-310/hierarchy_loader.o	111b97c983949cab
+1	3280	1778575532290972100	/media/felix-windisch/data/LoDOfGaussians/submodules/gaussianhierarchy/build/temp.linux-x86_64-cpython-310/morton.o	44ff723b34b6be83
+2	8908	1778575532291213800	/media/felix-windisch/data/LoDOfGaussians/submodules/gaussianhierarchy/build/temp.linux-x86_64-cpython-310/runtime_switching.o	eb18de44cf5392c4
+1	16529	1778575532290053300	/media/felix-windisch/data/LoDOfGaussians/submodules/gaussianhierarchy/build/temp.linux-x86_64-cpython-310/ext.o	1b5614cdc3582bb1
+2	17079	1778575532291485800	/media/felix-windisch/data/LoDOfGaussians/submodules/gaussianhierarchy/build/temp.linux-x86_64-cpython-310/torch/torch_interface.o	eafd42c58dffcee7

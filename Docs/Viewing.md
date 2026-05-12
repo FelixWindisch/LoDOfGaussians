@@ -1,0 +1,4 @@
+The ```hierarchy_viewer``` integrates with SplatViz for lots of exciting features. To use these simply start the ```hierarchy_viewer``` and splatviz as described in the README. Then, add new variables under Edit/Add Slider with the following names:
+- *distance_multiplier:* Multiplies the distance for the LoD, the higher this value the lower the detail level.
+- *freeze_view:* Use this to test the frustum culling and LoD. While *freeze_view* is set to a value greater than zero, the set of Gaussians remains frozen, while you can fly around
+- *record_traj:* While *record_traj* is set to a value greater than zero, the camera positions for each frame will be saved to a camera file. Afterwards, a video can be recorded from the camera file by starting the viewer with --replay and --ID <camera_ID> (This will be randomly generated)
