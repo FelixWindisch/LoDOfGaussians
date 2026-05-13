@@ -44,5 +44,5 @@
     "clear_cache_interval": 1000,
     "llff_hold": -1,
     "vary_distance_multiplier": true,
-    "output_file_name": "P_classic_huge.dhier"
+    "output_file_name": "MatrixCity.dhier"
 }

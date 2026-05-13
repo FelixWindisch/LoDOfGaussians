@@ -97,8 +97,8 @@ export CPATH=$CONDA_PREFIX/include:$CONDA_PREFIX/targets/x86_64-linux/include:$C
 export LD_LIBRARY_PATH=$CONDA_PREFIX/lib:$CONDA_PREFIX/targets/x86_64-linux/lib:$LD_LIBRARY_PATH
 ```
 
-
-Check out the (Hyperparameter Guide)[Docs/Hyperparameters.md] to create your own configuration file tailored for your scene.
+We provide basic hyperparameters in configs for basic large-scale scenes (default.json), smaller test scenes (small.json) and the MatrixCity dataset.
+Check out the [Hyperparameter Guide](Docs/Hyperparameters.md) to create your own configuration file tailored for your scene.
 
 Training runs in 2 steps: Coarse Optimization (Standard 3DGS, sparse point cloud) and Fine Optimization (Out of Core and LoD, with densification). 
 
@@ -108,7 +108,7 @@ python eval_hierarchy.py --hierarchy /path/to/result.dhier -s root/  --config de
 python hierarchy_viewer.py --hierarchy /path/to/result.dhier -s root/  --config default.json
 ```
 ```eval_hierarchy``` will render all images in the test set (use the llffhold in your config parameter to designate every nth image for testing) and output quality metrics.
-```hierarchy_viewer``` allows interactive viewing of the results. This can be done using the networked inria viewer, but we strongly recommend installing SplatViz (https://github.com/Florian-Barthel/splatviz) and running it with ```python run_main.py --mode=attach``` while ```hierarchy_viewer``` is running.
+```hierarchy_viewer``` allows interactive viewing of the results. This can be done using the networked inria viewer, but we strongly recommend installing SplatViz (https://github.com/Florian-Barthel/splatviz) and running it with ```python run_main.py --mode=attach``` while ```hierarchy_viewer``` is running. Check out [Docs/Viewing.md](Docs/Viewing.md) for additional viewer features.
 
 ### Disclaimer
 Note that this code release version relies on the gsplat rasterizer and will thus be more memory-efficient than reported in the paper.
