@@ -21,7 +21,7 @@ Always set these hyperparameters for your specific dataset
 - *min_SPT_size:* This is the minimum number of Gaussians that can form an SPT. This simply prohibits the formation of many tiny SPTs, which would not be worth the overhead.
 - *coarse_iterations:* How many iterations coarse training should be run. For extremely large datasets, increase this to 100-150k.
 - *SH_degree:* Generally, we recommend setting this to 1. Increasing it to 2 or 3 might slightly improve image quality at great performance cost.
-- *densification:* Either "classic" (Standard 3DGS) or "MCMC" (Kheradmand et al. 2024). We have found that "classic" produces better results on ultra-large scale datasets, but MCMC may increase quality if the scene is small and Gaussian Budget is high.
+- *densification:* Either "classic" (Standard 3DGS) or "MCMC" (Kheradmand et al. 2024). We have found that "classic" produces better results on ultra-large scale datasets, but MCMC may increase quality if the scene is small and Gaussian Budget is high. **Note that MCMC densification is not compatible with gsplat rasterizer, because it requires per-primitive contribution**.
 - *noise_lr, lambda_scaling, lambda_opacity, lambda_distance_sigma, densify_percent:* Parameters for MCMC densification (See Kheradmand et al. 2024), only used if *densification == "MCMC"*. 
 - *use_bounding_spheres:* Use bounding sphere over the entire SPT subtree instead of three times the covariance of the root for frustum culling SPTs. Technically more accurate, but little difference in practice.
 - *clear_cache_interval:* Clears the cache every *clear_cache_interval* iterations to prevent stagnation in the cache.
