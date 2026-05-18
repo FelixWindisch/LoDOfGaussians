@@ -57,6 +57,8 @@ pip3 install torch torchvision --index-url https://download.pytorch.org/whl/cu12
 pip install -r requirements.txt
 pip install submodules/simple-knn --no-build-isolation
 pip install submodules/gaussianhierarchy --no-build-isolation
+pip install git+https://github.com/rahul-goel/fused-ssim/ --no-build-isolation
+
 ```
 
 
