@@ -207,7 +207,7 @@ class OptimizationParams(ParamGroup):
         self.use_bounding_spheres = False
         self.use_frustum_culling = True
         self.use_occlusion_culling = False
-        self.prune_unused = True
+        self.prune_unused = False
         self.dampen_scale_grad = False
         self.storage_device = 'cpu'
         self.SPT_root_volume = 10
